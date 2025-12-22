@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    background-image: url('./img/fondo-pizarra.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+
+}   
+.container-fluid {
+    background-color: orangered;
+    padding: 20px;
+}
+
+.titulo-navbar {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff8e1; /* blanco cálido */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+}
+.titulo-navbar {
+    font-family: 'Pacifico', cursive;
+}
+
+
+.navbar-nav a:hover {
+    color: white;
+}
+
+
+/* Estilos para las tarjetas de recetas */
+.card-body {
+    text-align: center;
+}
+
+.card-body:hover {
+    background-color: orangered;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.card{ 
+    color: grey;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+.card img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.receta{
+    height: 50px;
+}
+/* Título de las secciones */
+
+.section-title {
+    font-weight: bold;
+    color: orangered;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: orange;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+.section-title::before {
+  content: "🍲";
+  margin-right: 10px;
+}
+/* Subtítulo de las secciones */
+
+.section-sub-title {
+    font-weight: bold;
+    color: orangered;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+.section-sub-title::before {
+  content: "📖";
+  margin-right: 10px;
+}
+/* Subtítulo secundario, de las recetas */
+.section-title-secundarios {
+  font-weight: bold;
+  color: rgba(165, 42, 42, 0.788);
+  position: relative;
+  text-align: center;
+}
+.section-title-secundarios::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: rgba(165, 42, 42, 0.788);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+/* Estilos para el footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Un poco más oscuro que el fondo */
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Un poco más oscuro que el fondo */
+}
