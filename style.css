@@ -7,7 +7,8 @@ body {
     background-attachment: fixed;
     color: white;
 
-}   
+}
+
 .container-fluid {
     background-color: orangered;
     padding: 20px;
@@ -16,10 +17,12 @@ body {
 .titulo-navbar {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #fff8e1; /* blanco cálido */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    color: #fff8e1;
+    /* blanco cálido */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     letter-spacing: 1px;
 }
+
 .titulo-navbar {
     font-family: 'Pacifico', cursive;
 }
@@ -44,11 +47,11 @@ body {
     transition: 0.5s;
 }
 
-.card{ 
+.card {
     color: grey;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    }
+}
 
 .card img:hover {
     transform: scale(1.05);
@@ -56,9 +59,10 @@ body {
     border-radius: 10px;
 }
 
-.receta{
+.receta {
     height: 50px;
 }
+
 /* Título de las secciones */
 
 .section-title {
@@ -67,21 +71,24 @@ body {
     position: relative;
     font-family: 'Pacifico', cursive;
     font-size: 50px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
+
 .section-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: orange;
-  margin: 10px auto 0;
-  border-radius: 2px;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: orange;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
+
 .section-title::before {
-  content: "🍲";
-  margin-right: 10px;
+    content: "🍲";
+    margin-right: 10px;
 }
+
 /* Subtítulo de las secciones */
 
 .section-sub-title {
@@ -90,35 +97,42 @@ body {
     position: relative;
     font-family: 'Pacifico', cursive;
     font-size: 30px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     position: relative;
 }
 
 .section-sub-title::before {
-  content: "📖";
-  margin-right: 10px;
+    content: "📖";
+    margin-right: 10px;
 }
+
 /* Subtítulo secundario, de las recetas */
 .section-title-secundarios {
-  font-weight: bold;
-  color: rgba(165, 42, 42, 0.788);
-  position: relative;
-  text-align: center;
+
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    color: orangered;
+    position: relative;
+    text-align: center;
 }
+
 .section-title-secundarios::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: rgba(165, 42, 42, 0.788);
-  margin: 10px auto 0;
-  border-radius: 2px;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: rgba(165, 42, 42, 0.788);
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
+
 /* Estilos para el footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.8) !important; /* Un poco más oscuro que el fondo */
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    /* Un poco más oscuro que el fondo */
 }
 
 .bg-dark {
-    background-color: rgba(0, 0, 0, 0.8) !important; /* Un poco más oscuro que el fondo */
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    /* Un poco más oscuro que el fondo */
 }
