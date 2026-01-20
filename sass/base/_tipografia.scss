@@ -1,0 +1,16 @@
+@use "../utilities/variables" as *;
+
+body {
+    background-image: url('../img/fondo-pizarra.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $color-secundario;
+}
+
+.container-fluid {
+    background-color: $bg-fondo-1;
+    padding: 20px;
+}
+

@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+
+/* Estilos para el footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 3px solid $color-primario;
+    font-family: $fuente-textos;
+    font-size: 0.9rem;
+    color: $color-secundario;
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.8) ;
+}

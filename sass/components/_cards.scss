@@ -1,0 +1,32 @@
+@use "../utilities/variables" as *;
+
+/* Estilos para las tarjetas de recetas */
+
+.card-body {
+    text-align: center;
+}
+
+.card-body:hover {
+    background-color: $bg-fondo-1;
+    color: $color-secundario;
+    border-radius: $radius-card;
+    transform: scale(1.05);
+    transition: $transition-lenta;
+}
+
+.card {
+    color: $color-cuarto;
+    border-radius: $radius-card;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    transition: $transition-lenta ;
+    border-radius: $radius-card;
+}
+
+.receta {
+    height: 50px;
+}
+

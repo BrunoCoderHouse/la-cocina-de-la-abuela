@@ -1,0 +1,61 @@
+@use "../utilities/variables" as *;
+
+
+
+/*---main---*/
+
+/* Título de las secciones */
+
+.section-title {
+    font-weight: bold;
+    color: $color-primario;
+    position: relative;
+    font-family: $fuente-titulos;
+    font-size: 50px;
+    text-shadow: $sombra-letras;
+}
+
+.section-title::after {
+   @extend %section-line-after;
+}
+
+.section-title::before {
+    content: "🍲";
+    margin-right: 10px;
+}
+
+/* Subtítulo de las secciones */
+
+.section-sub-title {
+    @extend %section-title-base;
+    font-size: 30px;
+    text-shadow: $sombra-letras;
+    
+}
+
+.section-sub-title::before {
+    content: "📖";
+    margin-right: 10px;
+}
+
+/* Subtítulo secundario, de las recetas */
+
+.section-title-secundarios {
+    @extend %section-title-base;
+    text-align: center;
+}
+
+.section-title-secundarios::after {
+   @extend %section-line-after;
+}
+
+main {
+
+  ol, ul {
+    font-family: $fuente-textos;
+  }
+
+  li {
+    line-height: 2.5;
+  }
+}
