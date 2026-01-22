@@ -4,3 +4,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* links sin color azul de link */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.card-link {
+    color: inherit;
+}
+
+.card-link:hover {
+    color: inherit;
+}

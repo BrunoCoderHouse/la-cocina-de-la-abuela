@@ -30,3 +30,106 @@
     height: 50px;
 }
 
+
+
+/* Animacion para las recetas populares */
+
+@keyframes chilly-snake-91 {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+  25% {
+    transform: scale(1.02) rotate(1deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.98) rotate(-1deg);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.02) rotate(1deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+}
+
+.recetas-populares {
+  .card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    &:hover {
+      animation: chilly-snake-91 1.5s ease-in-out infinite;
+    }
+  }
+}
+
+/* Estilos para las categorias */
+@keyframes spicy-rat {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.col-md-8 {
+  .card {
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s ease;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      transparent,
+      rgba(255, 69, 0, 0.5),
+      transparent
+    );
+    transform: translateX(-100%);
+  }
+
+  .card:hover::before {
+    animation: spicy-rat 1.2s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+  }
+}
+
+/* Estilos para recetas más vistas */
+.list-group-item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+  
+  a {
+    display: block;
+    width: 100%;
+    color: inherit;
+  }
+
+  &:hover {
+    background-color: $bg-fondo-1;
+    color: $color-secundario;
+    border-left-color: $color-primario;
+    padding-left: 1.5rem;
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}

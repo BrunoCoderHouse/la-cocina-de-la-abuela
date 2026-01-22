@@ -14,3 +14,15 @@
     line-height: 2;
   }
 }
+/* Pantallas grandes (27 pulgadas y más) */
+@media (min-width: 2560px) {
+  .recetas-populares {
+    .card {
+      width: 24rem !important;
+    }
+  }
+
+  .recetas-populares .gap-3 {
+    gap: 2rem !important;
+  }
+}
