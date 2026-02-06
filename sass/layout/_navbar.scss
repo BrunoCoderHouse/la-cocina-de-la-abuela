@@ -2,6 +2,12 @@
 
 /*------navbar------*/
 
+.navbar {
+    background-color: $bg-fondo-1;
+    padding: 0;
+    margin: 0;
+}
+
 .titulo-navbar {
     font-size: 40px;
     font-weight: bold;
@@ -9,6 +15,7 @@
     text-shadow: $sombra-letras ;
     letter-spacing: 5px;
     font-family: 'Pacifico', cursive;
+    transition: font-size 0.3s ease, letter-spacing 0.3s ease;
 }
 
 .titulo-navbar:hover {
@@ -16,6 +23,13 @@
     transform: scale(1.1) translateY(5px);
     transition: $transition-lenta;
 
+}
+
+@media (max-width: 767px) {
+  .titulo-navbar {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
 }
 
 .navbar-nav a {

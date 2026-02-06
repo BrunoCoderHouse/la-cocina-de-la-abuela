@@ -114,15 +114,13 @@
 
 /* Estilos para recetas más vistas */
 .list-group-item {
+  border-left: 4px solid transparent;
+}
+
+/* SOLO items que tienen link */
+.list-group-item:has(a) {
   transition: all 0.3s ease;
   cursor: pointer;
-  border-left: 4px solid transparent;
-  
-  a {
-    display: block;
-    width: 100%;
-    color: inherit;
-  }
 
   &:hover {
     background-color: $bg-fondo-1;
@@ -132,4 +130,11 @@
     transform: translateX(5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
+
+  a {
+    display: block;
+    width: 100%;
+    color: inherit;
+  }
 }
+

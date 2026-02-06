@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sopas</title>
+    <title>Sopas | La Cocina de la Abuela</title>
 
+    <meta name="description" content="Recetas de sopas caseras, desde las clásicas hasta las más elaboradas">
+    <meta name="author" content="Bruno Fernández Fontes">
+    <meta name="robots" content="index, follow">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg nav-colorfondo">
+        <nav class="navbar navbar-expand-lg nav-colorfondo fixed-top">
 
             <div class="container-fluid">
 
@@ -45,6 +49,7 @@
 
     <main>
         <section class="recetas-populares top-mb-5 my-5">
+            <h1 class="section-title-secundarios">Sopas</h1>
             <div class="d-flex justify-content-center align-items-center gap-3 flex-lg-row flex-md-row flex-column">
 
                 <div class="card" style="width: 18rem;">
@@ -64,7 +69,7 @@
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <a href="./sopa-verduras.html"><img src="../img/sopa-verdura.png" class="card-img-top"
+                    <a href="./sopa-verdura.html"><img src="../img/sopa-verdura.png" class="card-img-top"
                             alt="Sopa de Verduras Casera"></a>
                     <div class="card-body">
                         <h5 class="card-title">Sopa de Verduras</h5>
@@ -96,19 +101,66 @@
         </section>
 
     </main>
+   <footer class="bg-dark text-white mt-5">
+  <div class="container py-5">
 
-    <footer>
-        <div class="container-fluid bg-dark text-white text-center py-4">
-            <p class="mb-0">&copy; 2024 La Cocina de la Abuela. Todos los derechos reservados.</p>
-            <ul class="list-unstyled d-flex justify-content-center mt-3">
-                <li><a href="#" class="text-white me-3">Facebook</a></li>
-                <li><a href="#" class="text-white me-3">Instagram</a></li>
-                <li><a href="#" class="text-white">Twitter</a></li>
-            </ul>
+    <div class="row">
+
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5 class="fw-semibold">La Cocina de la Abuela</h5>
+        <p class="small text-white-50 mb-2">
+          Recetas originales de cocina casera, desarrolladas para uso personal y educativo.
+        </p>
+        <p class="small text-white-50 mb-0">
+          Queda prohibida la reproducción, distribución o explotación comercial total o parcial
+          de las recetas sin autorización expresa del autor.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-md-0 text-md-center">
+        <h6 class="text-uppercase small fw-semibold mb-3">Contacto</h6>
+
+        <p class="small mb-2">
+          <i class="bi bi-whatsapp me-2"></i>
+          <a href="https://wa.me/59891234567" class="text-white text-decoration-none">
+            +598 91 234 567
+          </a>
+        </p>
+
+        <p class="small mb-0">
+          <i class="bi bi-envelope me-2"></i>
+          <a href="mailto:contacto@lacocinadelaabuela.com"
+             class="text-white text-decoration-none">
+            contacto@lacocinadelaabuela.com
+          </a>
+        </p>
+      </div>
+
+      <div class="col-md-4 text-md-end">
+        <h6 class="text-uppercase small fw-semibold mb-3">Seguinos</h6>
+        <div class="d-flex justify-content-md-end justify-content-center gap-3">
+          <a href="#" class="text-white fs-5" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-white fs-5" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-white fs-5" aria-label="Twitter">
+            <i class="bi bi-twitter-x"></i>
+          </a>
         </div>
+      </div>
 
+    </div>
 
-    </footer>
+    <hr class="border-secondary my-4">
+
+    <div class="text-center small text-white-50">
+      &copy; 2026 La Cocina de la Abuela. Todos los derechos reservados.
+    </div>
+
+  </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

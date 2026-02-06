@@ -7,10 +7,23 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: $color-secundario;
+    margin: 0;
+    padding: 0;
 }
+
 
 .container-fluid {
     background-color: $bg-fondo-1;
     padding: 20px;
 }
+
+body {
+  .card {
+    background-color: #fff;
+  }
+}
+
+
+
+
 

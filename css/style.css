@@ -51,6 +51,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .container-fluid {
@@ -58,7 +60,31 @@ body {
   padding: 20px;
 }
 
+body .card {
+  background-color: #fff;
+}
+
+body:not(.home) header {
+  padding-top: 56px;
+}
+@media (min-width: 992px) {
+  body:not(.home) header {
+    padding-top: 70px;
+  }
+}
+
+/* Asegurar que en la home no haya padding */
+body.home header {
+  padding-top: 0;
+}
+
 /*------navbar------*/
+.navbar {
+  background-color: orangered;
+  padding: 0;
+  margin: 0;
+}
+
 .titulo-navbar {
   font-size: 40px;
   font-weight: bold;
@@ -66,6 +92,7 @@ body {
   text-shadow: 2px 2px 4px black;
   letter-spacing: 5px;
   font-family: "Pacifico", cursive;
+  transition: font-size 0.3s ease, letter-spacing 0.3s ease;
 }
 
 .titulo-navbar:hover {
@@ -74,6 +101,12 @@ body {
   transition: 0.5s ease;
 }
 
+@media (max-width: 767px) {
+  .titulo-navbar {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+}
 .navbar-nav a {
   font-size: 20px;
   font-weight: bold;
@@ -123,6 +156,9 @@ body {
   text-align: center;
 }
 
+main {
+  padding-top: 80px;
+}
 main ol, main ul {
   font-family: arial;
 }
@@ -225,22 +261,26 @@ main li {
 
 /* Estilos para recetas más vistas */
 .list-group-item {
-  transition: all 0.3s ease;
-  cursor: pointer;
   border-left: 4px solid transparent;
 }
-.list-group-item a {
-  display: block;
-  width: 100%;
-  color: inherit;
+
+/* SOLO items que tienen link */
+.list-group-item:has(a) {
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
-.list-group-item:hover {
+.list-group-item:has(a):hover {
   background-color: orangered;
   color: white;
   border-left-color: orangered;
   padding-left: 1.5rem;
   transform: translateX(5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.list-group-item:has(a) a {
+  display: block;
+  width: 100%;
+  color: inherit;
 }
 
 /* Estilos para el footer */

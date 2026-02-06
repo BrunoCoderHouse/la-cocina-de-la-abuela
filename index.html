@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La cocina de la Abuela</title>
 
+    <meta name="description" content="Recetas sensillas de cocina casera, para uso personal y educativo.">
+    <meta name="author" content="Bruno Fernández Fontes">
+    <meta name="robots" content="index, follow">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="home">
 
     <header>
-        <nav class="navbar navbar-expand-lg nav-colorfondo">
+        <nav class="navbar navbar-expand-lg nav-colorfondo fixed-top">
 
             <div class="container-fluid">
 
@@ -43,8 +47,9 @@
     </header>
 
     <main>
-        <section class="carousel-inicio">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"  data-bs-pause="hover">
+        <section class="carousel-inicio mb-5 ">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
+                data-bs-pause="hover">
                 <div class="carousel-inner obj-cover">
                     <div class="carousel-item active">
                         <a href="./index.html"> <img src="./img/lacocinadelaabuela-logo.png" class="d-block w-100"
@@ -87,7 +92,8 @@
             <div class="d-flex justify-content-center align-items-center gap-3 flex-lg-row flex-md-row flex-column">
 
                 <div class="card" style="width: 18rem;">
-                    <a href="./pages2/crema-calabaza.html"><img src="./img/cremadecalabaza.png" class="card-img-top" alt="..."></a>
+                    <a href="./pages2/crema-calabaza.html"><img src="./img/cremadecalabaza.png" class="card-img-top"
+                            alt="..."></a>
                     <div class="card-body">
                         <h5 class="card-title">Crema de calabaza</h5>
                     </div>
@@ -103,7 +109,8 @@
                 <div class="d-flex justify-content-center align-items-center gap-3 flex-lg-row flex-md-row flex-column">
 
                     <div class="card" style="width: 18rem;">
-                        <a href="./pages2/tagliatale.html"><img src="./img/pastatallarines.jpg" class="card-img-top" alt="..."></a>
+                        <a href="./pages2/tagliatale.html"><img src="./img/pastatallarines.jpg" class="card-img-top"
+                                alt="..."></a>
                         <div class="card-body">
                             <h5 class="card-title">Tagliatelle a la Boloñesa</h5>
                         </div>
@@ -120,7 +127,8 @@
                         class="d-flex justify-content-center align-items-center gap-3 flex-lg-row flex-md-row flex-column">
 
                         <div class="card" style="width: 18rem;">
-                            <a href="./pages2/quiche.html"><img src="./img/tartasalada.png" class="card-img-top" alt="..."></a>
+                            <a href="./pages2/quiche.html"><img src="./img/tartasalada.png" class="card-img-top"
+                                    alt="..."></a>
                             <div class="card-body">
                                 <h5 class="card-title">Quiche Lorranie</h5>
                             </div>
@@ -133,11 +141,11 @@
                             </div>
                         </div>
         </section>
-        <!-- categorias y sidebar -->
+
         <section class="container my-5">
             <div class="row">
 
-            <!--categorias-main -->
+                <!--categorias-main -->
                 <div class="col-md-8 height-100">
                     <h2 class="mb-4 section-sub-title">Categorías</h2>
 
@@ -145,27 +153,36 @@
                         <!-- filas superiores -->
                         <div class="col-md-4">
                             <div class="card text-center">
-                                <a href="./pages2/pastas.html"><img src="img/pastatallarines.jpg" class="card-img-top" alt="Pastas"></a>
+                                <a href="./pages2/pastas.html"><img src="img/pastatallarines.jpg" class="card-img-top"
+                                        alt="Pastas"></a>
                                 <div class="card-body">
-                                    <a href="./pages2/pastas.html"><h5 class="card-title">Pasta</h5></a>
+                                    <a href="./pages2/pastas.html">
+                                        <h5 class="card-title">Pasta</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="card text-center">
-                                <a href="./pages2/sopas.html"><img src="./img/cremadecalabaza.png" class="card-img-top" alt="Sopas"></a>
+                                <a href="./pages2/sopas.html"><img src="./img/cremadecalabaza.png" class="card-img-top"
+                                        alt="Sopas"></a>
                                 <div class="card-body">
-                                    <a href="./pages2/sopas.html"><h5 class="card-title">Sopa</h5></a>
+                                    <a href="./pages2/sopas.html">
+                                        <h5 class="card-title">Sopa</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="card text-center">
-                                <a href="./pages2/tartas.html"><img src="img/tartasalada.png" class="card-img-top" alt="Tartas"></a>
+                                <a href="./pages2/tartas.html"><img src="img/tartasalada.png" class="card-img-top"
+                                        alt="Tartas"></a>
                                 <div class="card-body">
-                                    <a href="./pages2/tartas.html"><h5 class="card-title">Tarta</h5></a>
+                                    <a href="./pages2/tartas.html">
+                                        <h5 class="card-title">Tarta</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -173,27 +190,36 @@
                         <!-- filas inferiores -->
                         <div class="col-md-4">
                             <div class="card text-center">
-                                <a href="./pages2/postres.html"><img src="img/postre.png" class="card-img-top" alt="Postres"></a>
+                                <a href="./pages2/postres.html"><img src="img/postre.png" class="card-img-top"
+                                        alt="Postres"></a>
                                 <div class="card-body">
-                                    <a href="./pages2/postres.html"><h5 class="card-title">Postre</h5></a>
+                                    <a href="./pages2/postres.html">
+                                        <h5 class="card-title">Postre</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="card text-center">
-                                <a href="./pages2/rapida.html"><img src="img/comida-rapida.png" class="card-img-top" alt="Rápidas"></a>
+                                <a href="./pages2/rapida.html"><img src="img/comida-rapida.png" class="card-img-top"
+                                        alt="Rápidas"></a>
                                 <div class="card-body">
-                                    <a href="./pages2/rapida.html"><h5 class="card-title">Rápida</h5></a>
+                                    <a href="./pages2/rapida.html">
+                                        <h5 class="card-title">Rápida</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="card text-center">
-                                <a href="./pages2/economica.html"><img src="img/comida-economica.png" class="card-img-top" alt="Económicas"></a>
+                                <a href="./pages2/economica.html"><img src="img/comida-economica.png"
+                                        class="card-img-top" alt="Económicas"></a>
                                 <div class="card-body">
-                                    <a href="./pages2/economica.html"><h5 class="card-title">Económica</h5></a>
+                                    <a href="./pages2/economica.html">
+                                        <h5 class="card-title">Económica</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -205,9 +231,9 @@
                     <h4 class="section-sub-title">Recetas más vistas</h4>
                     <div class="card p-3 mb-3">
                         <ul class="list-group mb-4">
-                            <a href="./pages2/milanesa-napolitana.html"><li class="list-group-item">Milanesas Napolitana</li></a>
-                            <a href="./pages2/nioquis.html"><li class="list-group-item">Ñoquis de papa</li></a>
-                            <a href="./pages2/pascualina.html"><li class="list-group-item">Pascualina</li></a>
+                            <li class="list-group-item"><a href="./pages2/milanesa-napolitana.html">Milanesas Napolitana</a></li>
+                            <li class="list-group-item"><a href="./pages2/nioquis.html">Ñoquis de papa</a></li>
+                            <li class="list-group-item"><a href="./pages2/pascualina.html">Pascualina</a></li>
                         </ul>
                     </div>
 
@@ -226,21 +252,68 @@
 
 
     </main>
+   <footer class="bg-dark text-white mt-5">
+  <div class="container py-5">
 
-    <footer>
-        <div class="container-fluid bg-dark text-white text-center py-4">
-            <p class="mb-0">&copy; 2024 La Cocina de la Abuela. Todos los derechos reservados.</p>
-            <ul class="list-unstyled d-flex justify-content-center mt-3">
-                <li><a href="#" class="text-white me-3">Facebook</a></li>
-                <li><a href="#" class="text-white me-3">Instagram</a></li>
-                <li><a href="#" class="text-white">Twitter</a></li>
-            </ul>
+    <div class="row">
+
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5 class="fw-semibold">La Cocina de la Abuela</h5>
+        <p class="small text-white-50 mb-2">
+          Recetas originales de cocina casera, desarrolladas para uso personal y educativo.
+        </p>
+        <p class="small text-white-50 mb-0">
+          Queda prohibida la reproducción, distribución o explotación comercial total o parcial
+          de las recetas sin autorización expresa del autor.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-md-0 text-md-center">
+        <h6 class="text-uppercase small fw-semibold mb-3">Contacto</h6>
+
+        <p class="small mb-2">
+          <i class="bi bi-whatsapp me-2"></i>
+          <a href="https://wa.me/59891234567" class="text-white text-decoration-none">
+            +598 91 234 567
+          </a>
+        </p>
+
+        <p class="small mb-0">
+          <i class="bi bi-envelope me-2"></i>
+          <a href="mailto:contacto@lacocinadelaabuela.com"
+             class="text-white text-decoration-none">
+            contacto@lacocinadelaabuela.com
+          </a>
+        </p>
+      </div>
+
+      <div class="col-md-4 text-md-end">
+        <h6 class="text-uppercase small fw-semibold mb-3">Seguinos</h6>
+        <div class="d-flex justify-content-md-end justify-content-center gap-3">
+          <a href="#" class="text-white fs-5" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-white fs-5" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-white fs-5" aria-label="Twitter">
+            <i class="bi bi-twitter-x"></i>
+          </a>
         </div>
+      </div>
 
+    </div>
 
-    </footer>
+    <hr class="border-secondary my-4">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    <div class="text-center small text-white-50">
+      &copy; 2026 La Cocina de la Abuela. Todos los derechos reservados.
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
